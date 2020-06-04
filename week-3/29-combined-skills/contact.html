@@ -56,14 +56,27 @@
         <form method="GET" class="contact-form">
           <div class="contact-form__field">
             <label for="name">Name</label>
-            <input type="text" name="name" id="name" />
+            <input type="text" name="name" id="name" required />
           </div>
           <div class="contact-form__field">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required />
+          </div>
+          <div class="contact-form__field">
+            <label for="message">Message</label>
             <textarea
+              id="message"
               name="message"
               placeholder="Your message should not be longer than 200 words."
+              required
             ></textarea>
           </div>
+          <fieldset>
+            <legend>What branch are you interested in?</legend>
+            <label><input type="checkbox" name="city1">London</label></br>
+            <label><input type="checkbox" name="city2">Glasgow</label></br>
+            <label><input type="checkbox" name="city3">Manchester</label></br>
+          </fieldset>
           <button type="submit">Send</button>
         </form>
       </main>
@@ -71,7 +84,8 @@
       <footer>
         <p>
           <a href="https://github.com/CodeYourFuture/html-css-git-exercises">Built</a>
-          with ♥ for <a href="https://codeyourfuture.io/">CodeYourFuture</a>.
+          with <span class="hearth">♥</span> for
+          <a href="https://codeyourfuture.io/">CodeYourFuture</a>.
         </p>
         <p>
           <svg

@@ -1,1 +1,52 @@
 /* Add your own CSS code below */
+.hearth {
+  color: red;
+}
+
+@media (min-width: 992px) {
+  .hero__title {
+    font-size: 50px;
+  }
+}
+
+.main-nav__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+header {
+  width: 30%;
+}
+
+@media (min-width: 767px) {
+  header {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  .views {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+  }
+  .views a:last-child {
+    margin-left: auto;
+  }
+
+  .views a {
+    margin: 10px 10px;
+  }
+}
+.main-article p {
+  max-width: 50em;
+  line-height: 1.5em;
+}
+
+.site-content {
+  display: flex;
+  justify-content: center;
+}
